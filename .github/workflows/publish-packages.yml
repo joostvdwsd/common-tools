@@ -30,7 +30,6 @@ jobs:
       - name: Publish
         run: yarn gitversion publish
         env:
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
           YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
 
