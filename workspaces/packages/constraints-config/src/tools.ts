@@ -18,7 +18,7 @@ export function enforceGitLocationField(yarn: Yarn) {
     if (str.length > 0) {
       enforceFieldsOnAllWorkspaces(yarn, {
         ['repository.type']: 'git',
-        ['repository.url']: str.replace(/\.git$/, ''),
+        ['repository.url']: str.replace(/\.git$/, '').replace(/\/\/.*@/, '//'),
         ['repository.directory']: (workspace: Workspace) => workspace.cwd,
       });
     }
