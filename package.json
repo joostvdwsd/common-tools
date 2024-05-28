@@ -7,7 +7,7 @@
     "url": "https://github.com/cp-utils/common-tools",
     "directory": "."
   },
-  "author": "Joost van der Waal <joost.vanderwaal@aegon.nl>",
+  "author": "Joost van der Waal <joost@jvdwaal.nl>",
   "license": "MIT",
   "packageManager": "yarn@4.1.0",
   "devDependencies": {
