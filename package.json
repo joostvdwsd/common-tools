@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cp-utils/common-tools",
+    "url": "https://github.com/joostvdwsd/common-tools",
     "directory": "."
   },
   "author": "Joost van der Waal <joost@jvdwaal.nl>",
