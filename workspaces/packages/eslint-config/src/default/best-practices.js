@@ -1,9 +1,10 @@
-/** @type {import('eslint').Linter.BaseConfig} */
+/* eslint @typescript-eslint/naming-convention: 0 */
+
 module.exports = {
-  plugins: [
-    '@typescript-eslint',
-    'arca',
-  ],
+  plugins: {
+    '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
+    arca: require('eslint-plugin-arca'),
+  },
 
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 2,

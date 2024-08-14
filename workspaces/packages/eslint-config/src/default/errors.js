@@ -1,8 +1,9 @@
-/** @type {import('eslint').Linter.BaseConfig} */
+/* eslint @typescript-eslint/naming-convention: 0 */
+
 module.exports = {
-  plugins: [
-    '@typescript-eslint',
-  ],
+  plugins: {
+    '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
+  },
 
   rules: {
     '@typescript-eslint/no-extra-non-null-assertion': 2,
@@ -68,12 +69,12 @@ module.exports = {
     'valid-typeof': 2,
   },
 
-  overrides: [
-    {
-      files: ['*.test.{js,ts}'],
-      env: {
-        jest: true,
-      },
-    },
-  ],
+  // overrides: [
+  //   {
+  files: ['*.test.{js,ts}'],
+  env: {
+    jest: true,
+  },
+  //   },
+  // ],
 };

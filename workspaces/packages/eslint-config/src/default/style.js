@@ -1,22 +1,23 @@
-/** @type {import('eslint').Linter.BaseConfig} */
+/* eslint @typescript-eslint/naming-convention: 0 */
 module.exports = {
-  plugins: [
-    '@typescript-eslint',
-    'arca',
-  ],
+  plugins: {
+    '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
+    '@stylistic': require('@stylistic/eslint-plugin-ts'),
+    arca: require('eslint-plugin-arca'),
+  },
 
   rules: {
     '@typescript-eslint/array-type': ['error', {
       default: 'array',
     }],
 
-    '@typescript-eslint/brace-style': 2,
+    '@stylistic/brace-style': 2,
 
-    '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
+    '@stylistic/comma-dangle': ['error', 'always-multiline'],
 
-    '@typescript-eslint/keyword-spacing': 2,
+    '@stylistic/keyword-spacing': 2,
 
-    '@typescript-eslint/comma-spacing': 2,
+    'comma-spacing': 2,
 
     '@typescript-eslint/naming-convention': ['error', {
       selector: 'default',
@@ -28,14 +29,14 @@ module.exports = {
       leadingUnderscore: 'allow',
     }],
 
-    '@typescript-eslint/func-call-spacing': 2,
+    '@stylistic/func-call-spacing': 2,
 
-    '@typescript-eslint/indent': ['error', 2, {
+    '@stylistic/indent': ['error', 2, {
       SwitchCase: 1,
       ignoredNodes: ['TSTypeParameterInstantiation'],
     }],
 
-    '@typescript-eslint/member-delimiter-style': ['error', {
+    '@stylistic/member-delimiter-style': ['error', {
       multiline: {
         delimiter: 'semi',
         requireLast: true,
@@ -57,13 +58,13 @@ module.exports = {
       },
     }],
 
-    '@typescript-eslint/quotes': ['error', 'single'],
+    '@stylistic/quotes': ['error', 'single'],
 
-    '@typescript-eslint/semi': 2,
+    '@stylistic/semi': 2,
 
-    '@typescript-eslint/space-infix-ops': 2,
+    '@stylistic/space-infix-ops': 2,
 
-    '@typescript-eslint/type-annotation-spacing': 2,
+    '@stylistic/type-annotation-spacing': 2,
 
     'arca/import-quotes': 2,
 

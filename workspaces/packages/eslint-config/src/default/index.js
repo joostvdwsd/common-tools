@@ -1,23 +1,32 @@
-// Workaround for https://github.com/eslint/eslint/issues/3458
-require('@rushstack/eslint-patch/modern-module-resolution');
-
-/** @type {import('eslint').Linter.BaseConfig} */
-module.exports = {
-  extends: [
-    './best-practices',
-    './errors',
-    './style',
-    './typescript',
-  ].map(require.resolve),
-
-  parser: require.resolve('@typescript-eslint/parser'),
-
-  env: {
-    node: true,
-    es2021: true,
+module.exports = [
+  {
+    ignores: [
+      'dist',
+      'lib',
+      '*.d.ts',
+      '.yarn',
+      'coverage',
+      '*.json',
+      '*.tsbuildinfo',
+      '*.lock',
+      'cdk.out',
+      '.pnp.*',
+    ],
   },
-
-  parserOptions: {
-    sourceType: 'module',
+  require('./best-practices'),
+  require('./errors'),
+  require('./style'),
+  require('./typescript'),
+  {
+    languageOptions: {
+      parser: require('@typescript-eslint/parser'),
+      globals: {
+        node: true,
+        es2021: true,
+      },
+      parserOptions: {
+        sourceType: 'module',
+      },
+    },
   },
-};
+];

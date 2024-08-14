@@ -1,4 +1,5 @@
-/** @type {import('eslint').Linter.BaseConfig} */
+/* eslint @typescript-eslint/naming-convention: 0 */
+
 module.exports = {
   plugins: [
     'markdown',
