@@ -1,5 +1,6 @@
 /* eslint @typescript-eslint/naming-convention: 0 */
 
+
 module.exports = {
   plugins: {
     '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
