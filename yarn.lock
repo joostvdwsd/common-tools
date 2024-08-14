@@ -556,40 +556,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cp-utils/constraints-config@workspace:^, @cp-utils/constraints-config@workspace:workspaces/packages/constraints-config":
-  version: 0.0.0-use.local
-  resolution: "@cp-utils/constraints-config@workspace:workspaces/packages/constraints-config"
-  dependencies:
-    "@types/node": "npm:^20.10.7"
-    "@yarnpkg/types": "npm:^4.0.0"
-    ts-node: "npm:^10.9.2"
-    typescript: "npm:^5.3.3"
-  languageName: unknown
-  linkType: soft
-
-"@cp-utils/eslint-config@workspace:^, @cp-utils/eslint-config@workspace:workspaces/packages/eslint-config":
-  version: 0.0.0-use.local
-  resolution: "@cp-utils/eslint-config@workspace:workspaces/packages/eslint-config"
-  dependencies:
-    "@rushstack/eslint-patch": "npm:^1.2.0"
-    "@types/eslint": "npm:^8.44.9"
-    "@types/node": "npm:^20.10.7"
-    "@typescript-eslint/eslint-plugin": "npm:^5.59.2"
-    "@typescript-eslint/parser": "npm:^5.59.2"
-    eslint-plugin-arca: "npm:^0.16.0"
-    eslint-plugin-markdown: "npm:^3.0.1"
-    eslint-plugin-react: "npm:^7.33.2"
-    ts-node: "npm:^10.9.2"
-    typescript: "npm:^5.3.3"
-  peerDependencies:
-    eslint: "*"
-    typescript: "*"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  languageName: unknown
-  linkType: soft
-
 "@cp-utils/gitversion@npm:^0.0.33":
   version: 0.0.33
   resolution: "@cp-utils/gitversion@npm:0.0.33"
@@ -1006,6 +972,40 @@ __metadata:
   checksum: 10c0/18cf19f88e2792c1c91515f2b629aae05f3cdbb2e60c3886e16e80725234ce26dd10144c4981c05d9366e7094498c0b4fe5c1a89f4a730d7376a4ba4af448149
   languageName: node
   linkType: hard
+
+"@jvdwaalsd/constraints-config@workspace:^, @jvdwaalsd/constraints-config@workspace:workspaces/packages/constraints-config":
+  version: 0.0.0-use.local
+  resolution: "@jvdwaalsd/constraints-config@workspace:workspaces/packages/constraints-config"
+  dependencies:
+    "@types/node": "npm:^20.10.7"
+    "@yarnpkg/types": "npm:^4.0.0"
+    ts-node: "npm:^10.9.2"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
+
+"@jvdwaalsd/eslint-config@workspace:^, @jvdwaalsd/eslint-config@workspace:workspaces/packages/eslint-config":
+  version: 0.0.0-use.local
+  resolution: "@jvdwaalsd/eslint-config@workspace:workspaces/packages/eslint-config"
+  dependencies:
+    "@rushstack/eslint-patch": "npm:^1.2.0"
+    "@types/eslint": "npm:^8.44.9"
+    "@types/node": "npm:^20.10.7"
+    "@typescript-eslint/eslint-plugin": "npm:^5.59.2"
+    "@typescript-eslint/parser": "npm:^5.59.2"
+    eslint-plugin-arca: "npm:^0.16.0"
+    eslint-plugin-markdown: "npm:^3.0.1"
+    eslint-plugin-react: "npm:^7.33.2"
+    ts-node: "npm:^10.9.2"
+    typescript: "npm:^5.3.3"
+  peerDependencies:
+    eslint: "*"
+    typescript: "*"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  languageName: unknown
+  linkType: soft
 
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
@@ -2894,9 +2894,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "common-tools@workspace:."
   dependencies:
-    "@cp-utils/constraints-config": "workspace:^"
-    "@cp-utils/eslint-config": "workspace:^"
     "@cp-utils/gitversion": "npm:^0.0.33"
+    "@jvdwaalsd/constraints-config": "workspace:^"
+    "@jvdwaalsd/eslint-config": "workspace:^"
     "@types/eslint": "npm:^8.44.9"
     "@yarnpkg/types": "npm:^4.0.0"
     eslint: "npm:^8.55.0"

@@ -1,5 +1,5 @@
 {
-  "name": "@cp-utils/eslint-config",
+  "name": "@jvdwaalsd/eslint-config",
   "version": "0.0.0",
   "license": "BSD-2-Clause",
   "main": "./src/default/index.js",

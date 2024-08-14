@@ -1,5 +1,5 @@
 {
-  "name": "@cp-utils/constraints-config",
+  "name": "@jvdwaalsd/constraints-config",
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "@types/node": "^20.10.7",

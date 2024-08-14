@@ -11,9 +11,9 @@
   "license": "MIT",
   "packageManager": "yarn@4.1.0",
   "devDependencies": {
-    "@cp-utils/constraints-config": "workspace:^",
-    "@cp-utils/eslint-config": "workspace:^",
     "@cp-utils/gitversion": "^0.0.33",
+    "@jvdwaalsd/constraints-config": "workspace:^",
+    "@jvdwaalsd/eslint-config": "workspace:^",
     "@types/eslint": "^8.44.9",
     "@yarnpkg/types": "^4.0.0",
     "eslint": "^8.55.0",

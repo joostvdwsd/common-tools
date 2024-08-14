@@ -2,7 +2,7 @@
 /** @type {import('eslint').Linter.BaseConfig} */
 module.exports = {
   extends: [
-    '@cp-utils/eslint-config',
+    '@jvdwaalsd/eslint-config',
     // '@cp-utils/eslint-config/local-react',
     // '@cp-utils/eslint-config/local-markdown',
   ],
