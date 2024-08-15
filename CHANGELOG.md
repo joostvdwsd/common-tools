@@ -4,6 +4,26 @@
 All notable changes to this project will be documented in this file
 
 
+## [0.1.0](https://github.com/jwpkg/common-tools/compare/v0.0.4...v0.1.0) (Thu Aug 15 2024)
+
+
+
+## [0.0.4](https://github.com/jwpkg/common-tools/compare/v0.0.3...v0.0.4) (Thu Aug 15 2024)
+
+### feat
+
+* Bumptype workflow trigger ([a7c6f3e](https://github.com/jwpkg/common-tools/commit/a7c6f3e5222eb53c7ce73162405e755266942cb2))
+
+### fix
+
+* Bumptype input ([74eb38e](https://github.com/jwpkg/common-tools/commit/74eb38e6a056c5fd100008492ddfaafa59f14095))
+
+* test with push ([d1ad0f6](https://github.com/jwpkg/common-tools/commit/d1ad0f61994888a92b236ead01a011bd70b34845))
+
+### chore
+
+* Upgrade gitversion ([77c3c56](https://github.com/jwpkg/common-tools/commit/77c3c56209280be497b86e3efa7efe98f8df16fb))
+
 ## [0.0.3](https://github.com/jwpkg/common-tools/compare/v0.0.2...v0.0.3) (Thu Aug 15 2024)
 
 ### fix
