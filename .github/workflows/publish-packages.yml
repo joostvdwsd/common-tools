@@ -5,9 +5,9 @@ on:
       bumpType:
         description: 'Use a custom bump type'
         type: choice
-        default: ''
+        default: ' '
         options:
-          - ''
+          - " "
           - graduate
           - major
           - minor
@@ -21,7 +21,7 @@ permissions:
   contents: write
   
 env:
-  BUMP_TYPE: ${{ inputs.bumpType != '' && format('--bump-type {0}', inputs.bumpType) || '' }}
+  BUMP_TYPE: ${{ inputs.bumpType != null && inputs.bumpType != ' ' && format('--bump-type {0}', inputs.bumpType) || '' }}
 
 jobs:
   Build-packages:
