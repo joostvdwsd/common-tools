@@ -11,8 +11,12 @@ module.exports = {
     '@typescript-eslint/adjacent-overload-signatures': 2,
 
     '@typescript-eslint/no-unused-vars': [1, {
-      args: 'none',
+      args: 'all',
       argsIgnorePattern: '^_',
+      caughtErrors: 'all',
+      caughtErrorsIgnorePattern: '^_',
+      destructuredArrayIgnorePattern: '^_',
+      varsIgnorePattern: '^_',
       ignoreRestSiblings: true,
     }],
 
