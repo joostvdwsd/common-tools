@@ -1,5 +1,5 @@
 {
-  "name": "@joostvdwsd/constraints-config",
+  "name": "@jwpkg/constraints-config",
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
     "@types/node": "^22.3.0",

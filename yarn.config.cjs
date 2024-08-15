@@ -1,7 +1,7 @@
 /** @type {import('@yarnpkg/types')} */
 const { defineConfig } = require('@yarnpkg/types');
 
-const { enforceGenericRules, enforceFieldsOnAllWorkspaces, enforceGenericJsii } = require('@joostvdwsd/constraints-config/local');
+const { enforceGenericRules, enforceFieldsOnAllWorkspaces, enforceGenericJsii } = require('@jwpkg/constraints-config/local');
 
 module.exports = defineConfig({
 
