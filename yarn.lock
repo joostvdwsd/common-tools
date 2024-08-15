@@ -556,9 +556,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cp-utils/gitversion@npm:^0.0.33":
-  version: 0.0.33
-  resolution: "@cp-utils/gitversion@npm:0.0.33"
+"@cp-utils/gitversion@npm:^0.0.50":
+  version: 0.0.50
+  resolution: "@cp-utils/gitversion@npm:0.0.50"
   dependencies:
     "@yarnpkg/cli": "npm:^4.1.0"
     "@yarnpkg/core": "npm:^4.0.3"
@@ -573,11 +573,11 @@ __metadata:
     cross-spawn-extra: "npm:^2.1.0"
     glob: "npm:^10.3.10"
     queue-promise: "npm:^2.2.1"
-    semver: "npm:^7.5.4"
+    semver: "npm:^7.6.0"
     typanion: "npm:^3.14.0"
   bin:
     gitversion: bin/index.js
-  checksum: 10c0/b8eb7ddb2a1729fbc5891103ca33b393c1f8281e83f566930e0e09d45843b4a7d00cef7bc591dec03b3bbe1e1a419aeaa0ad00ef413826e8dc6df352aff5cf3e
+  checksum: 10c0/91930fcb3e9e0341c7882d7f963ddf1cbea374442888d1b947fc4a7391ee641b97194ae9887fc3f6a4d78986c4bfce916d018e86c6ab037a99a2357dca047831
   languageName: node
   linkType: hard
 
@@ -2968,7 +2968,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "common-tools@workspace:."
   dependencies:
-    "@cp-utils/gitversion": "npm:^0.0.33"
+    "@cp-utils/gitversion": "npm:^0.0.50"
     "@jwpkg/constraints-config": "workspace:^"
     "@jwpkg/eslint-config": "workspace:^"
     "@types/eslint": "npm:^9.6.0"
