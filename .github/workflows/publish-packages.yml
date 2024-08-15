@@ -21,7 +21,7 @@ permissions:
   contents: write
   
 env:
-  BUMP_TYPE: ${{ inputs.bumpType != 'none' && format('--bump-type {0}', inputs.bummpType) || '' }}
+  BUMP_TYPE: ${{ inputs.bumpType != 'none' && format('--bump-type {0}', inputs.bumpType) || '' }}
 
 jobs:
   Build-packages:
