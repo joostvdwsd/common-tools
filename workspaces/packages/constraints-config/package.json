@@ -37,7 +37,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/joostvdwsd/common-tools",
+    "url": "https://github.com/jwpkg/common-tools",
     "directory": "workspaces/packages/constraints-config"
   },
   "version": "0.0.0"
