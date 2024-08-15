@@ -1,5 +1,5 @@
 {
-  "name": "@joostvdwsd/eslint-config",
+  "name": "@jwpkg/eslint-config",
   "version": "0.0.0",
   "license": "BSD-2-Clause",
   "main": "./src/default/index.js",
