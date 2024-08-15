@@ -1,6 +1,17 @@
 name: Generate packages and publish
 on:
-  workflow_dispatch:  
+  workflow_dispatch:
+    inputs:        
+      bumpType:
+        description: 'Use a custom bump type'
+        type: choice
+        default: none
+        options:
+          - none
+          - graduate
+          - major
+          - minor
+          - patch  
   push:
     branches:
       - main
@@ -9,6 +20,9 @@ on:
 permissions:
   contents: write
   
+env:
+  BUMP_TYPE: ${{ inputs.bumpType != 'none' && format('--bump-type {0}', inputs.bummpType) || '' }}
+
 jobs:
   Build-packages:
     runs-on: ubuntu-latest
@@ -25,7 +39,7 @@ jobs:
         run: yarn
 
       - name: Bump
-        run: yarn gitversion bump
+        run: yarn gitversion bump $BUMP_TYPE
 
       - name: Publish
         run: yarn gitversion publish
