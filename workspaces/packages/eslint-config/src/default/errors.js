@@ -4,7 +4,15 @@ module.exports = {
   plugins: {
     '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
   },
-
+  files: [
+    '**/*.ts',
+    '**/*.mts',
+    '**/*.tsx',
+    '**/*.js',
+    '**/*.mjs',
+    '**/*.cjs',
+    '**/*.jsx',
+  ],
   rules: {
     '@typescript-eslint/no-extra-non-null-assertion': 2,
 

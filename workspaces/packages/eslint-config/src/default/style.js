@@ -5,7 +5,15 @@ module.exports = {
     '@stylistic': require('@stylistic/eslint-plugin-ts'),
     arca: require('eslint-plugin-arca'),
   },
-
+  files: [
+    '**/*.ts',
+    '**/*.mts',
+    '**/*.tsx',
+    '**/*.js',
+    '**/*.mjs',
+    '**/*.cjs',
+    '**/*.jsx',
+  ],
   rules: {
     '@typescript-eslint/array-type': ['error', {
       default: 'array',

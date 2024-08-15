@@ -6,7 +6,15 @@ module.exports = {
     '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
     arca: require('eslint-plugin-arca'),
   },
-
+  files: [
+    '**/*.ts',
+    '**/*.mts',
+    '**/*.tsx',
+    '**/*.js',
+    '**/*.mjs',
+    '**/*.cjs',
+    '**/*.jsx',
+  ],
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 2,
 
