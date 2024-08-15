@@ -4,6 +4,12 @@
 All notable changes to this project will be documented in this file
 
 
+## [0.0.5](https://github.com/jwpkg/common-tools/compare/v0.0.4...v0.0.5) (Thu Aug 15 2024)
+
+### fix
+
+* Pipeline file ([06dbdc3](https://github.com/jwpkg/common-tools/commit/06dbdc306e8d19525dbee3a4f604b370b52094cd))
+
 ## [0.1.0](https://github.com/jwpkg/common-tools/compare/v0.0.4...v0.1.0) (Thu Aug 15 2024)
 
 
