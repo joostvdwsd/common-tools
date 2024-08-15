@@ -4,6 +4,12 @@
 All notable changes to this project will be documented in this file
 
 
+## [0.0.2](https://github.com/jwpkg/common-tools/compare/v0.0.1...v0.0.2) (Thu Aug 15 2024)
+
+### fix
+
+* **constraints** Updated git fields ([b1254fd](https://github.com/jwpkg/common-tools/commit/b1254fdebf1631bf1b6bde22227afad635ccb804))
+
 ## [0.0.1](https://github.com/joostvdwsd/common-tools/compare/v0.0.0...v0.0.1) (Thu Aug 15 2024)
 
 ### feat
@@ -15,12 +21,6 @@ All notable changes to this project will be documented in this file
 ### fix
 
 * **constraints** Strip auth part from git url ([a997a5b](https://github.com/joostvdwsd/common-tools/commit/a997a5bd94f39d6c02b7f43b4f805cce62a24557))
-
-* Eslint versions ([3c051f9](https://github.com/joostvdwsd/common-tools/commit/3c051f9e0826f245c0796b8662d4f54087260f58))
-
-## [0.0.2](https://github.com/joostvdwsd/common-tools/compare/v0.0.1...v0.0.2) (Wed Aug 14 2024)
-
-### fix
 
 * Eslint versions ([3c051f9](https://github.com/joostvdwsd/common-tools/commit/3c051f9e0826f245c0796b8662d4f54087260f58))
 
