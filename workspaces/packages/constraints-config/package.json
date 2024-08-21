@@ -40,5 +40,5 @@
     "url": "https://github.com/jwpkg/common-tools",
     "directory": "workspaces/packages/constraints-config"
   },
-  "version": "0.0.0"
+  "version": "0.1.0"
 }

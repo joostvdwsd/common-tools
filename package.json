@@ -1,20 +1,25 @@
 {
   "name": "common-tools",
-  "version": "0.0.0",
+  "version": "0.0.5",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/jwpkg/common-tools",
     "directory": "."
   },
+  "scripts": {
+    "test:jest": "jest"
+  },
   "author": "Joost van der Waal <joost@jvdwaal.nl>",
   "license": "MIT",
   "packageManager": "yarn@4.1.0",
   "devDependencies": {
     "@cp-utils/gitversion": "^0.0.50",
+    "@jest/globals": "^29.7.0",
     "@jwpkg/constraints-config": "workspace:^",
     "@jwpkg/eslint-config": "workspace:^",
     "@types/eslint": "^9.6.0",
+    "@types/jest": "^29.5.12",
     "@types/node": "^22.3.0",
     "@yarnpkg/types": "^4.0.0",
     "eslint": "^9.9.0",
@@ -26,7 +31,21 @@
   "jest": {
     "testMatch": [
       "**/*._test_.ts"
-    ]
+    ],
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": [
+        "ts-jest",
+        {
+          "diagnostics": {
+            "ignoreCodes": [
+              151001
+            ]
+          }
+        }
+      ]
+    }
   },
   "workspaces": [
     "workspaces/*/*"
