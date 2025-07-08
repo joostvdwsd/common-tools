@@ -3,6 +3,7 @@ import { Writable } from 'stream';
 
 import { Chars } from './constants';
 import { formatDuration } from './format-utils';
+import { LogWritable } from './log-writable';
 import { PLATFORM } from './platform';
 import { Color, Colors, Style } from './style-utils';
 
@@ -10,18 +11,21 @@ export type SyncSectionRunner = (logger: LogReporter) => void;
 export type AsyncSectionRunner = (logger: LogReporter) => Promise<void>;
 
 export interface Reporter {
+  stdout(): Writable;
+  stderr(): Writable;
+
   beginSection(title: string): Section;
-  endSection(section: Section): void;
   reportDebug(message: string): void;
   reportInfo(message: string): void;
-  reportWarning(message: string, important: boolean): void;
-  reportError(message: string, important: boolean): void;
+  reportWarning(message: string, important?: boolean): void;
+  reportError(message: string, important?: boolean): void;
 }
 
 export interface Section {
   title: string;
   startTime: Date;
   reporter: Reporter;
+  end: () => void;
 }
 
 export interface LogReporterOptions {
@@ -36,8 +40,16 @@ export class LogReporter implements Reporter {
   private parentReporter?: Reporter;
   private useColors: boolean;
   private parentStdout: Writable;
-  parentStderr: Writable;
+  private parentStderr: Writable;
   level = 0;
+
+  stdout() {
+    return new LogWritable(this);
+  }
+
+  stderr() {
+    return new LogWritable(this, 'error');
+  }
 
   constructor(private options?: LogReporterOptions) {
     this.parentReporter = options?.parentReporter;
@@ -86,7 +98,7 @@ export class LogReporter implements Reporter {
     if (PLATFORM?.start && this.level <= 1) {
       this.parentStdout.write(PLATFORM.start(title));
     }
-    return {
+    const section = {
       startTime: new Date(),
       title,
       reporter: new LogReporter({
@@ -96,10 +108,14 @@ export class LogReporter implements Reporter {
         stderr: this.parentStderr,
         useColors: this.useColors,
       }),
+      end: () => {
+        this.endSection(section);
+      },
     };
+    return section;
   }
 
-  endSection(section: Section) {
+  private endSection(section: Section) {
     const duration = Date.now() - section.startTime.getTime();
     if (PLATFORM?.end) {
       this.parentStdout.write(PLATFORM.end(section.title));

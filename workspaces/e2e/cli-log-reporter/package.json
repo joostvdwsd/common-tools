@@ -1,0 +1,24 @@
+{
+  "name": "@jwpkg-e2e/cli-log-reporter",
+  "packageManager": "yarn@4.1.0",
+  "private": true,
+  "dependencies": {
+    "cli-log-reporter": "workspace:^"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.0",
+    "esbuild": "^0.23.1",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwpkg/common-tools",
+    "directory": "workspaces/e2e/cli-log-reporter"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  }
+}

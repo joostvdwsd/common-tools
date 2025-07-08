@@ -12,7 +12,7 @@
   },
   "author": "Joost van der Waal <joost@jvdwaal.nl>",
   "license": "MIT",
-  "packageManager": "yarn@4.1.0",
+  "packageManager": "yarn@4.4.0",
   "devDependencies": {
     "@cp-utils/gitversion": "^0.0.50",
     "@jest/globals": "^29.7.0",
@@ -20,7 +20,7 @@
     "@jwpkg/eslint-config": "workspace:^",
     "@types/eslint": "^9.6.0",
     "@types/jest": "^29.5.12",
-    "@types/node": "^22.3.0",
+    "@types/node": "^22.5.0",
     "@yarnpkg/types": "^4.0.0",
     "eslint": "^9.9.0",
     "jest": "^29.7.0",

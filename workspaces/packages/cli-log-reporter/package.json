@@ -2,8 +2,10 @@
   "name": "cli-log-reporter",
   "packageManager": "yarn@4.1.0",
   "main": "src/index.ts",
+  "types": "src/index.ts",
   "publishConfig": {
-    "main": "lib/index.js"
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts"
   },
   "scripts": {
     "test": "yarn test:jest"
@@ -11,10 +13,10 @@
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.12",
-    "@types/node": "^22.4.1",
+    "@types/node": "^22.5.0",
     "expect": "^29.7.0",
     "ts-node": "^10.9.2",
-    "typecript": "^0.0.1-security"
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "ci-info": "^4.0.0",
@@ -24,5 +26,13 @@
     "/lib/**/!(*._test_).(js|d.ts)",
     "CHANGELOG.md"
   ],
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwpkg/common-tools",
+    "directory": "workspaces/packages/cli-log-reporter"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  }
 }

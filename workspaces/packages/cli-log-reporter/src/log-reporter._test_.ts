@@ -22,7 +22,7 @@ describe('Log reporter', () => {
     const logger = new LogReporter({ useColors: false });
     const section = logger.beginSection('Section 1');
     section.reporter.reportInfo('Nested');
-    logger.endSection(section);
+    section.end();
     expect(cliMock.stdData).toIncludeOutput([
       `${Chars.caret} ${Chars.startGroup} Section 1`,
       `${Chars.caret} ${Chars.group} Nested`,
@@ -37,9 +37,8 @@ describe('Log reporter', () => {
     section.reporter.reportInfo('Nested');
     const nestedSection = section.reporter.beginSection('Nested section');
     nestedSection.reporter.reportInfo('Nested 2');
-    section.reporter.endSection(nestedSection);
-    logger.endSection(section);
-
+    nestedSection.end();
+    section.end();
 
     expect(cliMock.stdData).toIncludeOutput([
       `${Chars.caret} ${Chars.startGroup} Section 2`,
